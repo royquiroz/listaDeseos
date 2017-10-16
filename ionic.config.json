@@ -1,5 +1,6 @@
 {
   "name": "deseos",
-  "app_id": "",
-  "type": "ionic-angular"
+  "app_id": "b34c8f08",
+  "type": "ionic-angular",
+  "integrations": {}
 }
