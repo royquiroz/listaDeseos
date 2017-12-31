@@ -3,6 +3,7 @@ import { ListaDeseosService } from "../../app/services/lista-deseos.sevice";
 
 import { NavController } from 'ionic-angular';
 import { AgregarComponent } from '../agregar/agregar.component';
+import { DetalleComponent } from './../detalle/detalle.component';
 
 
 @Component({
@@ -11,12 +12,17 @@ import { AgregarComponent } from '../agregar/agregar.component';
 })
 export class PendientesComponent implements OnInit {
 
-  constructor(private _listaDeseos: ListaDeseosService,
+  constructor(
+    private _listaDeseos: ListaDeseosService,
     private navCtrl: NavController) { }
 
   ngOnInit() { }
 
   irAgregar() {
     this.navCtrl.push( AgregarComponent )
+  }
+
+  verDetalle( lista, idx ) {
+    this.navCtrl.push( DetalleComponent, { lista, idx } )
   }
 }

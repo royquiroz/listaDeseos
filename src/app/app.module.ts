@@ -8,12 +8,14 @@ import { ListaDeseosService } from "./services/lista-deseos.sevice";
 
 //Pipes
 import { PlaceHolderPipe } from './pipes/placeholder.pipe';
+import { PendientesPipe } from './pipes/pendientes.pipe';
 
 /*Components*/
 import { PendientesComponent } from "../pages/pendientes/pendientes.component";
 import { TerminadosComponent } from "../pages/terminados/terminados.component";
 import { AgregarComponent } from "../pages/agregar/agregar.component";
 import { TabsPage } from '../pages/tabs/tabs';
+import { DetalleComponent } from '../pages/detalle/detalle.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -22,9 +24,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     PlaceHolderPipe,
+    PendientesPipe,
     PendientesComponent,
     TerminadosComponent,
     AgregarComponent,
+    DetalleComponent,
     TabsPage
   ],
   imports: [
@@ -37,6 +41,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PendientesComponent,
     TerminadosComponent,
     AgregarComponent,
+    DetalleComponent,
     TabsPage
   ],
   providers: [
